@@ -1,0 +1,250 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-white: rgb(255, 255, 255);
+    --main-light-green: rgb(84, 199, 82);
+    --main-dark-green: rgb(46, 75, 38);
+}
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    white-space: 1.5;
+    background: var(--main-white);
+}
+
+#container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+nav {
+    background: var(--main-light-green);
+}
+
+#logo {
+    width: 75vw;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+nav ul li, section li {
+    list-style: none;
+    margin-right: 0;
+    padding: 20px;
+    display: inline-flex;
+    align-items: baseline;
+}
+
+ li > a:hover {
+    color: var(--main-white);
+}
+
+ li > a {
+    text-decoration: none;
+    
+}
+
+h1, a {
+    color: var(--main-dark-green);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#features {
+    display: block;
+    margin: 50px auto 30px auto;
+    max-width: 750px;
+    width: 100%;
+    text-align: left;
+}
+
+.fa-check {
+    color: var(--main-dark-green);
+    margin-right: 10px;
+}
+
+.features-div h3{
+    color: var(--main-dark-green);
+}
+
+.features-div p {
+    margin: 10px 0;
+}
+
+#products {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border: solid 2px var(--main-light-green);
+    border-radius: 5px;
+}
+
+.product button {
+    padding: 10px;
+    margin-top: 20px;
+    background: var(--main-light-green);
+    color: var(--main-dark-green);
+    border: solid 2px var(--main-dark-green);
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#contact {
+    margin-bottom: 50px;
+}
+
+#form {
+    margin: 20px auto;
+}
+
+#email{
+    padding: 10px;
+    width: 300px;
+}
+
+#submit {
+    padding: 10px;
+    background: var(--main-light-green);
+    color: var(--main-dark-green);
+    border: solid 2px var(--main-dark-green);
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+footer {
+    background: var(--main-light-green);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#copyright {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    color: var(--main-dark-green);
+}
+
+#follow{
+    display: block;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+#follow p {
+    color: var(--main-dark-green);
+}
+
+#follow ul {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+#follow ul li {
+    list-style: none;
+    padding: 15px;
+}
+
+footer li a {
+    font-size: 30px !important;
+}
+
+@media only screen and (max-width: 800px) {
+    #products{
+        display: block;
+    }
+
+    .product{
+        max-width: 350px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    #logo{
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    
+    nav{
+        display: block;
+        overflow: hidden;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+    h2, p{
+        padding: 0 10px;
+    }
+
+    #submit{
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .product{
+        max-width: 300px;
+    }
+
+    #email{
+        max-width: 250px;
+    }
+
+    footer{
+        display: block;
+    }
+
+    #copyright{
+        text-align: center;
+        display: block;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    #follow{
+        margin: 0;
+    }
+
+    #follow ul {
+        justify-content: center;
+      }
+    
+}
