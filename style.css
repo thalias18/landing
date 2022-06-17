@@ -29,8 +29,10 @@ nav {
 
 #logo {
     width: 75vw;
-    margin-left: 20px;
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    color: var(--main-dark-green);
+    padding: 10px;
 }
 
 nav {
@@ -195,9 +197,8 @@ footer li a {
 
 @media only screen and (max-width: 550px){
     #logo{
-        width: 100%;
-        margin: 20px auto;
-        text-align: center;
+        margin: 0 auto;
+        justify-content: center;
     }
     
     nav{
